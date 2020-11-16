@@ -56,8 +56,6 @@ namespace WF_CloudClient
         {
             try
             {
-                
-
                 // FileInfo 생성
                 FileInfo file = new FileInfo(file_path);
                 // 파일이 존재하는지
@@ -105,8 +103,12 @@ namespace WF_CloudClient
             }
             catch (ArgumentNullException)
             {
-                //MessageBox.Show("파일을 선택해 주세요.");
+                MessageBox.Show("파일을 선택해 주세요.");
                 //Console.WriteLine("파일을 선택해 주세요.");
+            }
+            catch(SocketException)
+            {
+                MessageBox.Show("서버와 연결되지 않았습니다.");
             }
 
         }
@@ -158,11 +160,12 @@ namespace WF_CloudClient
                 }
 
             }
-            catch (Exception)
+            catch (SocketException)
             {
-                MessageBox.Show("파일을 선택해 주세요.");
+                MessageBox.Show("서버와 연결되지 않았습니다.");
                 //Console.WriteLine("파일을 선택해 주세요.");
             }
+            
         }
 
         // 파일 삭제
@@ -202,6 +205,11 @@ namespace WF_CloudClient
                 MessageBox.Show("파일을 선택해 주세요.");
                 //Console.WriteLine("파일을 선택해 주세요.");
             }
+            catch (SocketException)
+            {
+                MessageBox.Show("서버와 연결되지 않았습니다.");
+                //Console.WriteLine("파일을 선택해 주세요.");
+            }
         }
 
         // 파일 다운로드
@@ -211,6 +219,15 @@ namespace WF_CloudClient
             string file_name = "file";
             // 파일 다운로드 경로
             string file_download_path = "";
+
+            // 파일 경로 열기
+            FolderBrowserDialog fbd = new FolderBrowserDialog();
+
+            if (fbd.ShowDialog() == DialogResult.OK)
+            {
+                file_download_path = fbd.SelectedPath;
+
+            }
 
             try
             {
@@ -272,14 +289,7 @@ namespace WF_CloudClient
                             }
                         }
 
-                        // 파일 경로 열기
-                        FolderBrowserDialog fbd = new FolderBrowserDialog();
-
-                        if (fbd.ShowDialog() == DialogResult.OK)
-                        {
-                            file_download_path = fbd.SelectedPath;
-
-                        }
+                        
 
                         FileStream fs = new FileStream(@file_download_path + "\\" + file_name, FileMode.OpenOrCreate, FileAccess.Write);
 
@@ -297,6 +307,11 @@ namespace WF_CloudClient
             catch (ArgumentNullException)
             {
                 MessageBox.Show("파일을 선택해 주세요.");
+            }
+            catch (SocketException)
+            {
+                MessageBox.Show("서버와 연결되지 않았습니다.");
+                //Console.WriteLine("파일을 선택해 주세요.");
             }
         }
 

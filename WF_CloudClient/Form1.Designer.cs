@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.btn_download = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openFileDialog1
@@ -48,7 +49,7 @@
             // 
             // File
             // 
-            this.File.Location = new System.Drawing.Point(260, 352);
+            this.File.Location = new System.Drawing.Point(260, 362);
             this.File.Name = "File";
             this.File.Size = new System.Drawing.Size(100, 26);
             this.File.TabIndex = 1;
@@ -58,7 +59,7 @@
             // 
             // File_Address
             // 
-            this.File_Address.Location = new System.Drawing.Point(22, 352);
+            this.File_Address.Location = new System.Drawing.Point(22, 365);
             this.File_Address.Multiline = true;
             this.File_Address.Name = "File_Address";
             this.File_Address.ReadOnly = true;
@@ -95,7 +96,7 @@
             // 
             // File_Upload
             // 
-            this.File_Upload.Location = new System.Drawing.Point(260, 402);
+            this.File_Upload.Location = new System.Drawing.Point(260, 412);
             this.File_Upload.Name = "File_Upload";
             this.File_Upload.Size = new System.Drawing.Size(100, 26);
             this.File_Upload.TabIndex = 8;
@@ -123,11 +124,21 @@
             this.btn_download.UseVisualStyleBackColor = true;
             this.btn_download.Click += new System.EventHandler(this.btn_download_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(82, 338);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(72, 15);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "파일 경로";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(409, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_download);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.File_Upload);
@@ -156,6 +167,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
         private System.Windows.Forms.Button btn_download;
+        private System.Windows.Forms.Label label1;
     }
 }
 
