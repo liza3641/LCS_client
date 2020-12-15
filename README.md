@@ -5,11 +5,11 @@
 
 ### **설명**
 
-> TCP/IP, UART 통신을 활용한 원격 조명 제어 프로그램 제작.
+> TCP/IP 통신을 활용한 파일을 업로드, 다운로드, 삭제가 가능한 클라우드 서비스 프로그램 제작.
 
 
 ### **사용기술**
 
-> Python, Winform, UART, Socket, Raspberry-pi, Arduino
+> Python, Winform, Socket, Raspberry-pi
 
 <br>
