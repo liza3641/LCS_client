@@ -12,7 +12,8 @@
 
 > Python, Winform, Socket, Raspberry-pi
 
-<
+<br>
+
 ## **결과물**
 
 ### **Screenshot**
