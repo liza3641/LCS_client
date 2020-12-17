@@ -16,7 +16,7 @@
 
 ## **시스템 흐름도**
 
-<img src = "https://user-images.githubusercontent.com/41173881/102452637-05a9c080-407e-11eb-8507-5f3e6424f498.PNG" width="300px">
+<img src = "https://user-images.githubusercontent.com/41173881/102452637-05a9c080-407e-11eb-8507-5f3e6424f498.PNG" width="400px">
 
 
 
