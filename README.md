@@ -18,4 +18,4 @@
 
 ### **Screenshot**
 
-<img src = "https://user-images.githubusercontent.com/41173881/102229747-72627500-3f2f-11eb-8be4-ad3c65e9d7a7.PNG" width="200px">
+<img src = "https://user-images.githubusercontent.com/41173881/102229747-72627500-3f2f-11eb-8be4-ad3c65e9d7a7.PNG" width="300px">
