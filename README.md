@@ -10,7 +10,7 @@
 
 ### **사용기술**
 
-> Python, Winform, Socket, Raspberry-pi
+> Python, Winform, Socket, Raspberry-pi, Github
 
 <br>
 
